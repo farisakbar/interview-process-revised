@@ -147,7 +147,7 @@ public class Hello implements EntryPoint {
                 errorLabel.setText("");
                 String textToServer = nameField.getText();
                 if (!FieldVerifier.isValidName(textToServer)) {
-                    errorLabel.setText("Please enter more than 4 caracters");
+                    errorLabel.setText("You have entered less than 4 characters. Please enter more than 4 caracters");
                     return;
                 }
 
@@ -220,6 +220,13 @@ public class Hello implements EntryPoint {
             public void onClick(ClickEvent event) {
                 onGetPersonClick();
             }
+        });
+        
+        	clearPersonButton.addClickHandler(new ClickHandler() {
+        	@Override
+        	public void onClick(ClickEvent event) {
+        		// add method for clearning text box
+        	}
         });
 	    
 	}
