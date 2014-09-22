@@ -147,7 +147,7 @@ public class Hello implements EntryPoint {
                 errorLabel.setText("");
                 String textToServer = nameField.getText();
                 if (!FieldVerifier.isValidName(textToServer)) {
-                    errorLabel.setText("You have entered less than 4 characters. Please enter more than 4 caracters");
+                    errorLabel.setText("You have entered less than 4 characters. Please enter more than 4 characters");
                     return;
                 }
 
